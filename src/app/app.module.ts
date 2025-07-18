@@ -19,7 +19,7 @@ import { LatestNewsComponent } from './components/latest-news/latest-news.compon
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
