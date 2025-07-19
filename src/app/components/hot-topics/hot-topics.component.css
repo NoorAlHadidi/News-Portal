@@ -1,0 +1,37 @@
+#hot-topic-header {
+  margin-top: 2rem;
+}
+
+#hot-topic-image {
+  flex: 2;
+  max-width: 60%;
+}
+
+#hot-topic-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#hot-topic-info {
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  width: 65%;
+}
+
+#hot-topic-description {
+  flex: 1;
+  align-self: center;
+}
+
+#hot-topic-read-more {
+  text-decoration: none;    
+  color: inherit;             
+  font-weight: normal;       
+}
+
+#hot-topic-read-more:hover {
+  text-decoration: underline;
+}
