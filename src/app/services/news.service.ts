@@ -8,7 +8,7 @@ import { Article } from '../models/article.model';
 })
 export class NewsService {
   private apiKey = 'db303a2c63824c7ab90c76f1eb36628d';
-  private apiUrl = 'https://newsapi.org/v2';
+  private apiUrl = '/v2';;
 
   constructor(private http: HttpClient) {}
 
@@ -20,7 +20,7 @@ export class NewsService {
       apiKey: this.apiKey,
     };
 
-    return this.http.get<{ articles: Article[] }>(this.apiUrl, { params }).pipe(
+    return this.http.get<{ articles: Article[] }>(hotTopicUrl, { params }).pipe(
       map((response) => response.articles[0]),
       tap((article) => console.log('[NewsService] Hot topic:', article)),
       catchError((error) => {

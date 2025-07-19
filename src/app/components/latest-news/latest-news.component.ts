@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-latest-news',
-  imports: [],
   templateUrl: './latest-news.component.html',
-  styleUrl: './latest-news.component.css'
+  styleUrls: ['./latest-news.component.css']
 })
 export class LatestNewsComponent {
 

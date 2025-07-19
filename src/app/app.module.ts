@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { HotTopicsComponent } from './components/hot-topics/hot-topics.component';
 import { LatestNewsComponent } from './components/latest-news/latest-news.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

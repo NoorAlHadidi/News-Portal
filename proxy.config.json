@@ -1,0 +1,11 @@
+{
+  "/v2": {
+    "target": "https://newsapi.org",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/v2": "/v2"
+    }
+  }
+}
