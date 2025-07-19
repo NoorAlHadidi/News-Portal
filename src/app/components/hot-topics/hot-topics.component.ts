@@ -11,14 +11,17 @@ import { Article } from '../../models/article.model';
 })
 export class HotTopicsComponent implements OnInit, OnDestroy {
   private subscription: Subscription | null;
+  hotTopic: Article | null;
 
   constructor(private newsService: NewsService) {
     this.subscription = null;
+    this.hotTopic = null;
   }
 
   ngOnInit(): void {
     this.subscription = this.newsService.getHotTopic().subscribe({
       next: (article: Article | null) => {
+        this.hotTopic = article;
         console.log('Hot topic article:', article);
       },
       error: (error) => {

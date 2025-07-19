@@ -36,6 +36,7 @@ export class NewsService {
 
     const params = {
       language: 'en',
+      q: 'news',
       pageSize: '8',
       apiKey: this.apiKey,
     };

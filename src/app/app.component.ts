@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HotTopicsComponent } from './components/hot-topics/hot-topics.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   standalone: false,
