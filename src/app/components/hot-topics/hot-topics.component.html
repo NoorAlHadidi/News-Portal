@@ -1,15 +1,15 @@
 <section class="container my-5">
-    <h1 class="text-left my-4" id="hot-topic-header">Hot Topics</h1>
+    <h1 class="text-left my-4 font-roboto" id="hot-topic-header">Hot Topics</h1>
     <div *ngIf="hotTopic" class="d-flex gap-4" id="hot-topic-container">
         <div class="position-relative" id="hot-topic-image">
             <img [src]="hotTopic.urlToImage" [alt]="hotTopic.title" class="img-fluid rounded"/>
             <div class="position-absolute text-white p-3" id="hot-topic-info">
-                <p class="fw-bold">{{ hotTopic.title }}</p>
-                <small>{{ hotTopic.publishedAt | date: 'short' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ hotTopic.source.name }}</small>
+                <p class="font-playfair">{{ hotTopic.title }}</p>
+                <small class="font-roboto">{{ hotTopic.publishedAt | date: 'short' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ hotTopic.source.name }}</small>
             </div>
         </div>
         <div id="hot-topic-description">
-            <p> 
+            <p class="font-playfair"> 
                 {{ hotTopic.description }} <a [href]="hotTopic.url" target="_blank" id="hot-topic-read-more"> read more</a>
             </p>
         </div>
