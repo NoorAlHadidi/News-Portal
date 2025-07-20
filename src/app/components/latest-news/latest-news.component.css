@@ -27,3 +27,7 @@
   color: #949494;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
