@@ -1,10 +1,12 @@
 #hot-topic-header {
-  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #121221;
 }
 
 #hot-topic-image {
-  flex: 2;
   width: 100%;
+  flex: 2;
 }
 
 #hot-topic-image img {
@@ -22,7 +24,22 @@
   width: 65%;
 }
 
+#hot-topic-info p {
+  color: #F8F8F8;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#hot-topic-info small {
+  color: #F8F8F8;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
 #hot-topic-description {
+  color: #444444;
+  font-weight: 400;
+  font-size: 2rem;
   flex: 1;
   align-self: center;
 }

@@ -1,9 +1,8 @@
-<section class="container py-5">
-  <h2 class="mb-4">Latest News</h2>
-
+<section class="container">
+  <h2 class="mb-4" id="latest-news-header">Latest News</h2>
   <div *ngIf="latestArticles" class="row g-4">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let article of latestArticles">
-      <div class="card h-100 border-0 latest-news-card">
+      <div class="card h-100 border-0" id="article-card">
         <img
           [src]="article.urlToImage"
           [alt]="article.title"
@@ -12,8 +11,8 @@
           object-fit="cover"
         />
         <div class="card-body px-0">
-          <h5 class="card-title">{{ article.title }}</h5>
-          <small class="card-meta text-muted mb-0">
+          <h5 class="card-title" id="article-title">{{ article.title }}</h5>
+          <small id="article-meta-data">
             {{ article.publishedAt | date: 'short' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ article.source.name }}
           </small>
         </div>

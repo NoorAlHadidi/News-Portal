@@ -1,0 +1,21 @@
+button {
+    text-align: center;
+    height: 30;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+#active {
+    color: white;
+    background-color: #121221;
+}
+
+#in-active {
+    color: #121221;
+    background-color: white;
+}
+
+img {
+    height: 1.5rem;
+    width: 1.5rem;
+}

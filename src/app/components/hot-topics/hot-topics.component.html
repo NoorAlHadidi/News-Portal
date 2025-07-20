@@ -1,16 +1,16 @@
-<section class="container py-5">
-    <h1 class="text-left mb-4" id="hot-topic-header">Hot Topics</h1>
+<section class="container my-5">
+    <h1 class="text-left my-4" id="hot-topic-header">Hot Topics</h1>
     <div *ngIf="hotTopic" class="d-flex gap-4" id="hot-topic-container">
         <div class="position-relative" id="hot-topic-image">
             <img [src]="hotTopic.urlToImage" [alt]="hotTopic.title" class="img-fluid rounded"/>
             <div class="position-absolute text-white p-3" id="hot-topic-info">
-                <h2 class="fw-bold">{{ hotTopic.title }}</h2>
+                <p class="fw-bold">{{ hotTopic.title }}</p>
                 <small>{{ hotTopic.publishedAt | date: 'short' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ hotTopic.source.name }}</small>
             </div>
         </div>
         <div id="hot-topic-description">
             <p> 
-                {{ hotTopic.description }}.. <a [href]="hotTopic.url" target="_blank" id="hot-topic-read-more"> read more</a>
+                {{ hotTopic.description }} <a [href]="hotTopic.url" target="_blank" id="hot-topic-read-more"> read more</a>
             </p>
         </div>
     </div>
